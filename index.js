@@ -1,11 +1,12 @@
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobile-menu');
-const closeMenu = document.getElementById('close-menu');
+    const hamBurger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
 
-hamburger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-});
+    hamBurger.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+    });
 
-closeMenu.addEventListener('click', () => {
-  mobileMenu.classList.add('hidden');
-});
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
